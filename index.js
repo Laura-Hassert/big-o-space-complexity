@@ -258,7 +258,6 @@ class Factorial {
 }
 
 
-
 /* 
   We want to test a non-memoized version of this too, 
   so copy and paster your calcFac function and save it 
@@ -285,19 +284,19 @@ function noCacheCalcFac(num) {
 
 const myFac = new Factorial
 
-// console.time("not memoized factorial");
-// console.log(noCacheCalcFac(8))
-// console.log(noCacheCalcFac(8))
-// console.log(noCacheCalcFac(8))
-// console.log(noCacheCalcFac(8))
-// console.timeEnd("not memoized factorial");
+console.time("not memoized factorial");
+console.log(noCacheCalcFac(8))
+console.log(noCacheCalcFac(8))
+console.log(noCacheCalcFac(8))
+console.log(noCacheCalcFac(8))
+console.timeEnd("not memoized factorial");
 
-// console.time("memoized factorial");
-// console.log(myFac.calcFac(8))
-// console.log(myFac.calcFac(8))
-// console.log(myFac.calcFac(8))
-// console.log(myFac.calcFac(8))
-// console.timeEnd("memoized factorial");
+console.time("memoized factorial");
+console.log(myFac.calcFac(8))
+console.log(myFac.calcFac(8))
+console.log(myFac.calcFac(8))
+console.log(myFac.calcFac(8))
+console.timeEnd("memoized factorial");
 
 // 13) Memoization Challenge
 /*
@@ -340,7 +339,7 @@ function newMethod(num1, num2) {
     guess as to if one will be faster.
 */
 
-// ANSWER: noncached will be faster
+// ANSWER: non-memoized will be faster because it is a simpler (O(1)) complexity
 
 // Now fill this out and run your file
 
